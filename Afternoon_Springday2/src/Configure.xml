@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+<bean class="By_constructor.Fortune" id="t1">
+<property name="Regid" value="1500"></property>
+<property name="iname" value="Fortune"></property>
+<property name="add" value="Pune"></property>
+<property name="ft" ref="t2"></property>
+</bean>
+
+
+
+<bean class="By_constructor.Fortune_staff" id="t2">
+<property name="tid" value="1500"></property>
+<property name="tname" value="Fortune"></property>
+<property name="tsal" value="4500"></property>
+<property name="fs" ref="t3"></property>
+</bean>
+
+
+<bean class="By_constructor.Fortune_Stud" id="t3">
+<property name="sid" value="1"></property>
+<property name="sname" value="sarthak"></property>
+<property name="batch" value="afternoon"></property>
+<property name="domain" value="java"></property>
+</bean>
+</beans>

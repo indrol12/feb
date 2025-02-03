@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+<bean class="First.Doctor" id="t1">
+<property name="id" value="101"></property>
+<property name="name" value="Suyash"></property>
+<property name="demail" value="suyash@gmail.com"></property>
+<property name="ps" ref="t2"></property>
+</bean>
+
+
+<bean class="First.Pateints" id="t2">
+<property name="id" value="105"></property>
+<property name="name" value="Sarthak"></property>
+<property name="di" value="cold"></property>
+</bean>
+</beans>
